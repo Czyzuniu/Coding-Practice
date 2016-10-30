@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset=UTF-8>
+
+<link rel="stylesheet" title="stylesheet" href="stylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#con").slideToggle("slow");
+        //$("#download").animate({'margin-left' : "-=10000px"});
+        $("#download").fadeOut("50");
+        $("#con").animate({'margin-top' : "-=230px"});
+    });
+});
+</script>
+<title> Safe travels |  Welcome, friend </title>
+</head>
+<body>
+
+
+<nav>
+
+<ul id="nav-bar">
+
+  <li><a href = "index.html">Home</a></li>
+  <li><a href = "log.html">Log in</a></li>
+  <li><a href = "gallery.html">Gallery</a></li>
+  <li><a href = "#">Watch</a></li>
+  <li><a href = "search.html">Search</a></li>
+</ul>
+
+
+</nav>
+
+
+<div id="download">
+  <h1> GREETINGS, TRAVELER.... </h1>
+  <h2> START YOUR JOURNEY <a href = "#" id="flip">Here</a> </h2>
+</div>
+<div id="con">
+
+
+
+    <form name="registration" method="post" action="registration.php">
+    <label>  Username  </label><input type="text" name="name" value="" class="input">
+    <label>  Password  </label><input type="password" name="password" value=""class="input">
+    <label>  Email  </label> <input type="text" name="email" value=""class= "input">
+    <!--<a class="join" href="login.php">Log in </a>-->
+    <input type="submit" name="submit" value="register!" class="join" id="join">
+
+
+
+</form>
+
+</div>
+</div>
+
+
+
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="Images/frame.jpg" class="fullscreen-bgvideo">
+        <source src="Images/loop.mp4" type="video/mp4">
+    </video>
+    <audio loop autoplay id="myMusic">
+      <source src="Images/fad.mp3" type="audio/mp3"
+    </audio>
+
+</div>
+<script>
+var m = document.getElementById("myMusic");
+m.volume = 0.050;
+</script>
+<footer>
+    Copyright (c) 2016 Copyright Holder All Rights Reserved to Czyzu.
+</footer>
+  </body>
+
+</html>
