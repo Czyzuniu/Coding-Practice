@@ -1,0 +1,42 @@
+#wrapper{
+      display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    font-family: 'Slabo 27px', serif;
+}
+
+h1{
+    text-align:center;
+}
+
+#addToList{
+    height: 50px;
+    text-align:center;
+    font-size: 35px;
+    width: 80%;
+}
+
+#top{
+display: inline-flex;
+}
+
+button{
+    height: 50px;
+    width: 20%;
+}
+
+.completed{
+  text-decoration: line-through !important;
+}
+
+span{
+  float: right;
+  color: red;
+  cursor: pointer
+}
+
+.hidden{
+  visibility: hidden;
+}
